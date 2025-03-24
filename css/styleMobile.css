@@ -1,0 +1,527 @@
+@media (max-width: 480px) {
+    /* reset css */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+    }
+
+    /* html */
+    html {
+        overflow-x: hidden;
+    }
+
+    /* body */
+    body {
+        overflow-x: hidden;
+        background-color: rgb(25, 25, 25);
+        color: #FFF;
+        transition: .5s;
+    }
+
+    body.dark {
+        background-color: #E3DADA;
+        color: #000;
+        border: #000;
+    }
+
+    /* trilho */
+    .trilho {
+        width: 40px;
+        height: 20px;
+        background-color: #4d4d4d;
+        border-radius: 1.5rem;
+        position: relative;
+        cursor: pointer;
+        margin-right: .8rem;
+    }
+
+    /* trilho > indicador */
+    .trilho > .indicador {
+        width: 20px;
+        height: 20px;
+        background-color: rgb(25, 25, 25);
+        border-radius: 50%;
+        transform: scale(.8);
+        position: absolute;
+        left: 0;
+        transition: .5s;
+    }
+
+    /* trilho.light */
+    .trilho.dark {
+        background-color: #c3c3c3;
+    }
+
+    /* trilho.dark */
+    .trilho.dark .indicador {
+        left: 20px;
+        background-color: #fff;
+    }
+
+    /* headerContainer */
+    #headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 1.6rem 2rem;
+    }
+
+    /* headerCotainer > headerContainerTitle */
+    #headerContainer > #headerContainerTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* headerContainer > headerContainerTitle > h1 */
+    #headerContainer > #headerContainerTitle > h1 {
+        font-family: 'Montserrat';
+        font-size: 1.4rem;
+        margin-left: 10rem;
+    }
+
+    /* headerContainer > headerContainerInners */
+    #headerContainer > #headerContainerInners {
+        display: none;
+    }
+
+    /* sectionAboutMe */
+    #sectionAboutMe {
+        padding: 1rem 2rem;
+        margin-top: 4rem;
+    }
+
+    /* sectionAboutMe > sectionAboutMeInfos */
+    #sectionAboutMe > #sectionAboutMeInfos {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* sectionAboutMe > sectionAboutMeInfos > h2 */
+    #sectionAboutMe > #sectionAboutMeInfos > h2 {
+        font-size: 2.1rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+
+    /* sectionAboutMe > sectionAboutMeInfos > sectionAboutMeSubInfos */
+    #sectionAboutMe > #sectionAboutMeInfos > #sectionAboutMeSubInfos {
+        font-size: .9rem;
+        margin-bottom: .9rem;
+    }
+
+    /* sectionAboutMe > sectionAboutMeInfos > button */
+    #sectionAboutMe > #sectionAboutMeInfos > button {
+        background: linear-gradient(
+        134deg,
+        rgb(106, 152, 240) 0%,
+        rgb(73, 97, 220) 99%
+        );
+        color: #fff;
+        border: none;
+        padding: .8rem 1.2rem;
+        border-radius: .3rem;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    /* sectionAboutMe > sectionAboutMeInfos > sectionAboutMeInfosOther */
+    #sectionAboutMe > #sectionAboutMeInfos > #sectionAboutMeInfosOther {
+        display: flex;
+        justify-content: center;
+        gap: .8rem;
+        margin-top: 1.2rem;
+    }
+
+    /* sectionAboutMe > sectionAboutMeInfos > sectionAboutMeInfosOther > span */
+    #sectionAboutMe > #sectionAboutMeInfos > #sectionAboutMeInfosOther > span {
+        font-size: 1.8rem;
+        color: rgb(106, 152, 240);
+    }
+
+    /* sectionAboutMe > sectionAboutMeImage */
+    #sectionAboutMe > #sectionAboutMeImage {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* sectionAboutMe > sectionAboutMeImage */
+    #sectionAboutMe > #sectionAboutMeImage > img {
+        width: 200px;
+        margin-top: 2.5rem;
+    }
+
+    /* sectionThings */
+    #sectionThings {
+        padding: 1rem 2rem;
+    }
+
+    /* sectionThings > h2 */
+    #sectionThings > h2 {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+    }
+
+    /* sectionThings > sectionThingsGroup */
+    #sectionThings > #sectionThingsGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.8rem;
+        margin: 2.5rem 2rem;
+    }
+
+    /* sectionThings > sectionThingsGroup > sectionThingsCards */
+    #sectionThings > #sectionThingsGroup > .sectionThingsCards {
+        text-align: center;
+        padding: 2rem;
+        background-color: rgb(35, 35, 35);
+        border-radius: .8rem;
+    }
+
+    /* sectionThings > sectionThingsGroup > sectionThingsCards > span */
+    #sectionThings > #sectionThingsGroup > .sectionThingsCards > span {
+        background: linear-gradient(
+        134deg,
+        rgb(106, 152, 240) 0%,
+        rgb(73, 97, 220) 99%
+         );
+         width: 80px;
+         height: 80px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto;
+         border-radius: 50%;
+         color: #fff;
+    }
+
+    /* sectionThings > sectionThingsGroup > sectionThingsCards > h3 */
+    #sectionThings > #sectionThingsGroup > .sectionThingsCards > h3 {
+        margin-top: .6rem;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+
+    /* sectionThings > sectionThingsGroup > sectionThingsCards > p */
+    #sectionThings > #sectionThingsGroup > .sectionThingsCards > p {
+        font-size: .9rem;
+        margin-top: .6rem;
+        color: #fff;
+    }
+
+    /* sectionPerson */
+    #sectionPerson {
+        padding: 2rem 2rem;
+    }
+
+    /* sectionPerson > h2 */
+    #sectionPerson > h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 1.8rem;
+    }
+
+    /* sectionPerson > sectionPersonGroup */
+    #sectionPerson > #sectionPersonGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* sectionPerson > sectionPersonGroup > sectionPersonImage */
+    #sectionPerson > #sectionPersonGroup > #sectionPersonImage {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sectionPerson > #sectionPersonGroup > #sectionPersonImage > img {
+        width: 200px;
+        margin-bottom: 2.8rem;
+    }
+
+    #sectionPerson > #sectionPersonGroup > #sectionPersonInfos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sectionPerson > #sectionPersonGroup > #sectionPersonInfos > p {
+        text-align: center;
+        font-size: .9rem;
+        margin-bottom: .9rem;
+    }
+
+    #sectionPerson > #sectionPersonGroup > #sectionPersonInfos > button {
+        background: linear-gradient(
+        134deg,
+        rgb(106, 152, 240) 0%,
+        rgb(73, 97, 220) 99%
+         );
+         padding: .8rem 1.2rem;
+         border: none;
+         border-radius: .3rem;
+         color: #fff;
+         margin: 0 auto;
+    }
+
+    #sectionPerson > #sectionPersonGroup > #sectionPersonInfos > button > span >  a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #sectionCertificates {
+        padding: 2rem 2rem;
+    }
+
+    #sectionCertificates > #sectionCertificatesTitles {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #sectionCertificates > #sectionCertificatesTitles > p {
+        font-style: italic;
+        font-size: .9rem;
+    }
+
+    #sectionCertificates > #sectionCertificatesGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 2.5rem;
+    }
+
+    #sectionCertificates > #sectionCertificatesGroup > .sectionCertificatesCards > p {
+        display: none;
+    }
+
+    #sectionCertificates > #sectionCertificatesGroup > .sectionCertificatesCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+
+        background-color: rgb(35, 35, 35);
+    }
+
+    #sectionCertificates > #sectionCertificatesGroup > .sectionCertificatesCards > img {
+        width: 280px;
+        border-radius: .8rem;
+    }
+
+    #sectionCertificates > #sectionCertificatesGroup > .sectionCertificatesCards > #certificatesLists > ul {
+        display: none;
+    }
+
+    #sectionAcademy {
+        padding: 2rem 2rem;
+    }
+
+    #sectionAcademy > #sectionAcademyTitles {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sectionAcademy > #sectionAcademyTitles > h2 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-bottom: 2rem;
+    }
+
+    #sectionAcademy > #sectionAcademyTitles > p {
+        font-style: italic;
+        font-size: .9rem;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup > .academyBox > #academyBoxImage {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup > .academyBox > #academyBoxImage > img {
+        width: 280px;
+        border-radius: .3rem;
+        margin-bottom: 1rem;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup > .academyBox > #academyBoxInfos > p {
+        font-size: .8rem;
+        width: 270px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup > .academyBox > #academyBoxInfos > ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup > .academyBox > #academyBoxInfos > ul > li {
+        background: linear-gradient(
+        134deg,
+        rgb(106, 152, 240) 0%,
+        rgb(73, 97, 220) 99%
+        );
+        width: 180px;
+        margin: .3rem auto;
+        border-radius: .2rem;
+        padding: .4rem 1rem;
+    }
+
+    #sectionAcademy > #sectionAcademyGroup > .academyBox > #academyBoxInfos > ul > li > a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        font-size: .9rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    #sectionProjects {
+        padding: 2rem 2rem;
+    }
+
+    #sectionProjects > #sectionProjectsTitles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #sectionProjects #sectionProjectsFlex > #sectionProjectsGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #sectionProjects > #sectionProjectsFlex > #sectionProjectsGroup >.group > #sectionProjectsInfos > p {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    #sectionProjects > #sectionProjectsFlex > #sectionProjectsGroup > .group > #sectionProjectsInfos > #sectionProjectsInfosTech {
+        display: flex;
+        gap: .8rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    #sectionProjects > #sectionProjectsFlex > #sectionProjectsGroup > .group > #sectionProjectsInfos > #sectionProjectsInfosTech > span {
+        background: linear-gradient(
+        134deg,
+        rgb(106, 152, 240) 0%,
+        rgb(73, 97, 220) 99%
+        );
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    #sectionProjects > #sectionProjectsFlex > #sectionProjectsGroup > .group > #sectionProjectsImages {
+        display: flex;
+    }
+
+    #sectionProjects > #sectionProjectsFlex > #sectionProjectsGroup > .group > #sectionProjectsImages > .imageFather {
+        width: 330px;
+        height: 200px;
+        border-radius: .8rem;
+    }
+
+    #sectionProjects > #sectionProjectsFlex > #sectionProjectsGroup > .group > #sectionProjectsImages > .imageSon {
+        width: 100px;
+        height: 120px;
+        transform: translate(-40px, 100px);
+    }
+
+    #sectionSkills {
+        padding: 2rem 2rem;
+    }
+
+    #sectionSkills > h2 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    #sectionSkills > #sectionSkillsGroup {
+        display: flex;
+        gap: .2rem;
+        margin-top: 1rem;
+    }
+
+    #sectionSkills > #sectionSkillsGroup > span {
+        background: linear-gradient(
+        134deg,
+        rgb(106, 152, 240) 0%,
+         rgb(73, 97, 220) 99%
+        );
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        margin: 0 auto;
+        color: #fff;
+
+    }
+
+    #sectionOthers {
+        padding-top: .3rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #sectionOthers > #sectionOthersGroup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sectionOthers > #sectionOtherGroup > .sectionOtherCards {
+        background-color: rgb(35, 35, 35);
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        text-align: center;
+        font-size: .8rem;
+        color: #fff;
+    }
+
+    #footer {
+        display: none;
+    }
+
+}
+
+
+    
